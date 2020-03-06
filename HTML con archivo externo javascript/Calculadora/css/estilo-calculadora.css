@@ -1,0 +1,166 @@
+h1{
+  font-family:Bradley Hand ITC,oblicua;
+  font-size:100px;
+  font-weight:normal;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-size: 16px;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  color: #333;
+}
+
+.font-cover{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: #F5F5F5;
+}
+
+
+
+#inicio{
+    background-image: url(../assets/img/MaterialFontLogin.jpg);
+}
+
+.navegacion{
+    margin: 0;
+    padding: 10px;
+    width: 590px;
+    height: 250px;
+    text-align: center;
+    background-color: rgba(255,255,255,.77);
+    border-radius: 4px;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #333;
+}
+
+
+.links{
+    width: 21%;
+    margin: 0;
+    text-align: center;
+    background: lightgray;
+    border-radius: 30px;
+    padding: 5px;
+    font-family:futura;
+    display: inline-block;
+    color:white;
+    text-decoration: none;
+    padding: 15px 15px;
+    line-height: normal;
+    font-size: 25px;
+    font-weight:bold;
+    background-color:black ;
+}
+
+.links:hover{
+    background:#138098;
+}
+
+
+
+/* Variables */
+:root {
+    --color-text-btn: #1F5991;
+    --color-bg-btn-hover-top: #FFEDD9;
+    --color-bg-btn-hover-bottom: #FFD574;
+    --color-border-elements: #8E9CAD;
+    --color-bg-calcula: #D9E4F1;
+    --color-border-calcula: #EAD390;
+    --color-bg-btn-close: #E04343;
+    --color-icon-maximize: #898989;
+    --color-bg-btn-minimize-hover: #3665B3;
+}
+
+.calcula{
+    background-color: var(--color-bg-calcula);
+    max-width: 300px;
+    margin: 10% auto 0;
+    box-shadow: 0 0 0 1px var(--color-border-elements), 0 0 3px var(--color-border-elements);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.display, .keyboard__btn{
+    border: 1px solid var(--color-border-elements);
+    border-radius: 3px;
+
+}
+
+.display{
+    margin: 12px 12px 6px;
+    background-image: linear-gradient(var(--color-bg-calcula), white);
+    padding-bottom: 6px;
+    padding-top: 3px;
+}
+
+.display__top, .display__bottom{
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: right;
+    border: none;
+    background-color: transparent;
+    max-width: 100%;
+}
+
+.display__top{
+    font-size: 20px;
+    height: 23px;
+    width: 264px;
+}
+
+.display__bottom{
+    font-size: 25px;
+    font-weight: bold;
+    height: 40px;
+    width: 264px;
+}
+
+.keyboard{
+    margin: 0 12px 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.keyboard__btn{
+    width: 64.3px;
+    height: 54px;
+    text-transform: uppercase;
+    transition: .1s all linear;
+}
+
+.keyboard__btn:hover{
+    background-image: linear-gradient(var(--color-bg-btn-hover-top), var(--color-bg-btn-hover-bottom));
+    box-shadow: 0 0 2px 1px var(--color-bg-btn-hover-bottom);
+}
+
+.keyboard__btn:not(:nth-child(4)):not(:nth-child(8)):not(:nth-child(12)):not(:nth-child(16)):not(:nth-child(19)){
+    margin-right: 6px;
+}
+
+.keyboard__btn{
+    margin-bottom: 6px;
+}
+
+.keyboard__btn:nth-child(17){
+    width: 135px;
+}
+
